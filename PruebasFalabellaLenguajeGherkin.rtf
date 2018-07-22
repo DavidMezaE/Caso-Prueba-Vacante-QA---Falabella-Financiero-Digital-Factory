@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww19400\viewh17400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Feature: Caso de prueba aumento de cupo\
+\
+	@tag1\
+  Scenario: Aumento de cupo de tarjeta de cr\'e9dito\
+    Given Se ingresa a sitio privado de sitio bancario\
+    When se autentifica son su nombre de usuario "<usuario>" y contrase\'f1a "<contrase\'f1a>"\
+    Then el usuario ingresa a su sesi\'f3n en forma exitosa\
+    And Logra visualizar sus productos\
+    Then ingresa a la secci\'f3n de tarjetas de cr\'e9dito\
+    And selecciona la tarjeta de cr\'e9dito a operar\
+    And ingresa a la opci\'f3n de aumento de cupo\
+    Then solicita aumento de cupo en linea\
+    And se despliega mensaje de confirmaci\'f3n\
+    Then se abona aumento de cupo\
+    And se muestra comprobante de aumento de cupo\
+\
+    Examples: \
+      | usuario                  | contrase\'f1a    |\
+      | 14140083-5 	    | 1801falabella |\
+ 	\
+Criterios de aceptaci\'f3n : \
+ \
+* claro y bien definido, con su respectivo flujo de navegaci\'f3n. Esto incluye pantallas, mensajes, flujo y casos de error.\uc0\u8232 * Con contexto y estructura determinada de flujos de los procesos de aumento de cupo\
+*Criterios de aceptaci\'f3n concisos y sin ambig\'fcedades. \
+*Esto incluye casos bordes, casos de prueba\uc0\u8232 *Definir herramienta de medici\'f3n \
+\
+\
+\
+\
+\
+\
+\
+Feature: Compra online Falabella\
+\
+	@tag2\
+  Scenario: Compra de productos online\
+    Given Se ingresa a sitio privado de Falabella  y se autentifica son su nombre de usuario "<usuario>" y contrase\'f1a "<contrase\'f1a>"\
+    When se hace click en el "<boton>"\
+    Then el usuario ingresa a la "<pagina>" principal con sus credenciales\
+    Then se dirige a la secci\'f3n de productos \
+    Then luego selecciona el producto a comprar\
+    And lo agrega al carro de compra \
+    Then selecciona el medio de pago \
+    And selecciona las cuotas \
+    Then confirma el pago \
+    And pago exitoso\
+    \
+    Examples: \
+      | usuario              | contrase\'f1a      | boton       |        pagina.       |\
+      | 14140083-5       | 1801falabella  | Ingresar   | Menu_Principal |\
+ 	\
+\
+\
+\
+Criterios de aceptaci\'f3n : \
+ \
+* claro y bien definido, con su respectivo flujo de navegaci\'f3n. Esto incluye pantallas,  mensajes, flujo y casos de error.\uc0\u8232 * Con contexto y estructura determinada de flujos de los procesos del carro de compra\
+*Criterios de aceptaci\'f3n concisos y sin ambig\'fcedades. \
+*Esto incluye casos bordes, casos de prueba\uc0\u8232 *Definir herramienta de medici\'f3n }
