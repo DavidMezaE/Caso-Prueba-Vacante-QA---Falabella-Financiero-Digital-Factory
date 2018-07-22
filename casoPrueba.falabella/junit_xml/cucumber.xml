@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="28.045392">
+<testcase classname="Busqueda en Linkedin" name="Ingreso a test buscador" time="10.602468">
+<system-out><![CDATA[Given Se ingresa a navegador y vamos al buscador de google..................passed
+When Se confirma el titulo del buscador.....................................passed
+Then el usuario ingresa la palabra a buscar.................................passed
+Then el usuario presiona el boton buscar....................................passed
+Then Se presiona link de inicio de sesion linkedin..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Busqueda en Linkedin" name="Ingreso a Linkedin" time="12.780463">
+<system-out><![CDATA[Given Usuario ingresa su username "amezaepul@gmail.com" y su contraseña "1801falabella".passed
+When usuario presiona boton de login........................................passed
+When Busca contacto de red..................................................passed
+When Visualiza perfil de contacto...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Busqueda en Linkedin" name="Ingreso a perfil" time="4.662461">
+<system-out><![CDATA[Given Se ingresa a la seccion experiencia laboral...........................passed
+When se selecciona perfil...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
